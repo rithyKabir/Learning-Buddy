@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#ffffff"
+
+    tools:context=".coursePage">
+    <LinearLayout
+        android:background="@drawable/oip"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="57dp"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <TextView
+                android:text="My Courses"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:text="4 items available"
+
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                android:paddingTop="30dp"
+
+
+
+                > <LinearLayout
+                android:layout_marginRight="15dp"
+                android:paddingTop="100dp"
+
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                >
+                <ImageButton
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/cProgramming"
+                    android:layout_width="125dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/c"
+                    android:scaleType="fitXY">
+
+                </ImageButton>
+                <TextView
+                    android:text="C Programming"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:orientation="vertical"
+                    android:background="#FFFF"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:paddingLeft="20dp"
+                    >
+                    <ImageButton
+                        android:paddingTop="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
+                        android:id="@+id/javaProgramming"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/java"
+                        android:scaleType="fitXY">
+
+                    </ImageButton>
+                    <TextView
+                        android:text="Java Programming"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+
+
+
+
+                > <LinearLayout
+                android:layout_marginRight="15dp"
+
+                android:layout_gravity="center"
+
+                android:orientation="vertical"
+                android:background="#FFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                >
+                <ImageButton
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/gk"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/gk"
+                    android:scaleType="fitXY">
+
+                </ImageButton>
+                <TextView
+                    android:text="General Knowledge"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:background="#FFFF"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:paddingLeft="20dp"
+                    >
+                    <ImageButton
+                        android:paddingTop="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
+                        android:id="@+id/english"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/english"
+                        android:scaleType="fitXY">
+
+                    </ImageButton>
+                    <TextView
+                        android:text="English Vocabullary"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

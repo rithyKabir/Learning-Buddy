@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".addQuestion">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/oip2"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Question"/>
+        <EditText
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back4"
+            android:id="@+id/question"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Enter Question Here"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            >
+
+        </EditText>
+
+    <EditText
+        android:background="@drawable/back4"
+        android:id="@+id/answer"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+
+        android:hint="Enter Answer Here"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        >
+
+    </EditText>
+
+<Button
+    android:id="@+id/press"
+    android:text="Press and Hold"
+    android:textColor="#fff"
+    android:textSize="20dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/add_button"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+</Button>
+</LinearLayout>
+</RelativeLayout>
