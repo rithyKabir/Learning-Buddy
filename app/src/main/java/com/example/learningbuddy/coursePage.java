@@ -36,20 +36,14 @@ public class coursePage extends AppCompatActivity {
     {
         Intent intent = new Intent(this, cProgrammingAnimationPage.class);
         startActivity(intent);
-
-    }
-    void goToMenu()
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-
-        // animation
         Animatoo.animateSplit(this);
+
     }
+
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        goToMenu();
+        Animatoo.animateSplit(this);
     }
 }

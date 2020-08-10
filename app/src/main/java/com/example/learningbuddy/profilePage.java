@@ -29,6 +29,7 @@ public class profilePage extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        goToMenu();
+        Animatoo.animateSplit(this);
+
     }
 }

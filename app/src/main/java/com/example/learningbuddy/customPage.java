@@ -41,11 +41,7 @@ public class customPage extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
-
-        // animation
+        super.onBackPressed();
         Animatoo.animateSplit(this);
     }
 }

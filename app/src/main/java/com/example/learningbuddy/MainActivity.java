@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         textHome.startAnimation(frombutton);
         menu.startAnimation(frombutton);
 
-        // animation work ended
 
         //Initializing the buttons with id
         profile = findViewById(R.id.profile);
@@ -95,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+
         finish();
     }
 }
