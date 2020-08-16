@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cProgrammingAnimationPage"></activity>
+        <activity android:name=".QuizClassStarted"></activity>
+        <activity android:name=".splashscreen1" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".QuizClassActivity" />
+        <activity android:name=".category_all" />
+        <activity android:name=".cat3" />
+        <activity android:name=".cat2" />
+        <activity android:name=".cat1" />
+        <activity android:name=".cProgrammingAnimationPage" />
         <activity android:name=".addQuestion" />
         <activity android:name=".customPage" />
         <activity android:name=".coursePage" />
