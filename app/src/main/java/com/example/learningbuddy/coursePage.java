@@ -45,5 +45,6 @@ public class coursePage extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         Animatoo.animateSplit(this);
+
     }
 }
