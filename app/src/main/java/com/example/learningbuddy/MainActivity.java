@@ -1,17 +1,16 @@
 package com.example.learningbuddy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.view.View;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Initializing the buttons with id
         profile = findViewById(R.id.profile);
-        quiz = findViewById(R.id.quiz);
+        quiz = findViewById(R.id.quiz12);
         course = findViewById(R.id.course);
         custom =  findViewById(R.id.custom);
 
@@ -66,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 goToCustom();
+            }
+        });
+
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToQuiz();
             }
         });
 
@@ -91,6 +97,14 @@ public class MainActivity extends AppCompatActivity {
 
         // animation
         Animatoo.animateSplit(this);    }
+
+    /// will go to the new intent quiz started
+    void goToQuiz()
+    {
+        Intent intent = new Intent(this,splashscreen1.class);
+        startActivity(intent);
+        Animatoo.animateSplit(this);
+    }
 
     @Override
     public void onBackPressed() {
