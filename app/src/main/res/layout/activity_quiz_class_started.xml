@@ -11,23 +11,22 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="315dp"
+        android:layout_height="183dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172"
-        app:srcCompat="@drawable/quiz1" />
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/book" />
 
     <TextView
         android:id="@+id/appname3"
-        android:layout_width="158dp"
-        android:layout_height="51dp"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
         android:layout_marginTop="32dp"
-        android:text="  My Quizr
-"
+        android:text=" Learning Buddy "
         android:textColor="@android:color/white"
         android:textSize="32sp"
         android:textStyle="bold"
