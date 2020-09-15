@@ -24,8 +24,9 @@ public class cat1 extends AppCompatActivity implements View.OnClickListener {
     private Button option1,option2,option3,option4;
     private List<Question> questionList;
     private int questionnumber;
-    private CountDownTimer countd;
 
+    private CountDownTimer countd;
+    int answer_right=0,score=0;   //it will check for the ans
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +114,8 @@ public class cat1 extends AppCompatActivity implements View.OnClickListener {
         if (selectedOption == questionList.get(questionnumber).correctAns) {
             //the ansr is r8
 
+            answer_right++;
+            score++;
             ((Button)view).setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
 
 
@@ -167,7 +170,10 @@ public class cat1 extends AppCompatActivity implements View.OnClickListener {
         }
         else
         {
+            System.out.println(" YYYYYYYY   " +score );
             Intent intent = new Intent(cat1.this,ScoreActivity.class);
+
+            intent.putExtra("SCORE",String.valueOf(score)+"/"+String.valueOf(questionList.size()));
             startActivity(intent);
             cat1.this.finish();
         }

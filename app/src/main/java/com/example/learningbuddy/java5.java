@@ -18,7 +18,7 @@ public class java5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java5);
+        setContentView(R.layout.activity_java3);
         Button buttonShow = findViewById(R.id.selector);
         Button next = findViewById(R.id.next);
         Button prev = findViewById(R.id.prev);

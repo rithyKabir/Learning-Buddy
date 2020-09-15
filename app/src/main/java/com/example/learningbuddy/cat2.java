@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class cat2 extends AppCompatActivity implements View.OnClickListener {
 
     private TextView question,qcount ,timer ;
@@ -25,7 +26,7 @@ public class cat2 extends AppCompatActivity implements View.OnClickListener {
     private List<Question> questionList;
     private int questionnumber;
     private CountDownTimer countd;
-
+    int answer_right=0,score=0;   //it will check for the ans
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +114,8 @@ public class cat2 extends AppCompatActivity implements View.OnClickListener {
         if (selectedOption == questionList.get(questionnumber).correctAns) {
             //the ansr is r8
 
+            answer_right++;
+            score++;
             ((Button)view).setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
 
 
@@ -168,6 +171,7 @@ public class cat2 extends AppCompatActivity implements View.OnClickListener {
         else
         {
             Intent intent = new Intent(cat2.this,ScoreActivity.class);
+            intent.putExtra("SCORE",String.valueOf(score)+"/"+String.valueOf(questionList.size()));
             startActivity(intent);
             cat2.this.finish();
         }
