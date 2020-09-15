@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LearningBuddy</string>
+    <string name="title_activity_bottom_selector_c">bottomSelectorC</string>
+    <string name="title_activity_c_page1">cPage1</string>
 </resources>
