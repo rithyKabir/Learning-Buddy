@@ -173,7 +173,8 @@ public class cat1 extends AppCompatActivity implements View.OnClickListener {
             System.out.println(" YYYYYYYY   " +score );
             Intent intent = new Intent(cat1.this,ScoreActivity.class);
 
-            intent.putExtra("SCORE",String.valueOf(score)+"/"+String.valueOf(questionList.size()));
+            //intent.putExtra("SCORE",String.valueOf(score)+"/"+String.valueOf(questionList.size()));
+            intent.putExtra("SCORE",String.valueOf(score));
             startActivity(intent);
             cat1.this.finish();
         }

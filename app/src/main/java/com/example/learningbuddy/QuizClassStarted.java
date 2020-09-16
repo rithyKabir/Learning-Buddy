@@ -12,8 +12,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 
@@ -21,11 +28,15 @@ import static android.app.PendingIntent.FLAG_ONE_SHOT;
 
 public class QuizClassStarted extends AppCompatActivity {
     private Button getstarted;
+    DatabaseReference databaseReference;
     private Handler mHandler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_class_started);
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("asked");
+
         getstarted = findViewById(R.id.getstarted);
         mToastRunnable.run();
         getstarted.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +54,7 @@ public class QuizClassStarted extends AppCompatActivity {
         public void run() {
 
             startAlarm(true,true);
-            mHandler.postDelayed(this, 10000);
+            mHandler.postDelayed(this, 1000000);
         }
     };
 
@@ -54,13 +65,20 @@ public class QuizClassStarted extends AppCompatActivity {
         // SET TIME HERE
         Calendar calendar= Calendar.getInstance();
 
-
         int hour = calendar.get(Calendar.HOUR);
         int min = calendar.get(Calendar.MINUTE);
         int sec = calendar.get(Calendar.SECOND);
-        if(hour>=4 && min >=10 && sec >=0)
+        if(hour>=1 && min >=0 && sec >=0)
         {
+            //firebase
 
+            String key = databaseReference.push().getKey();
+
+            databaseReference.child(key).setValue("1");
+
+
+
+            //firebase end
             NotificationCompat.Builder builder = new NotificationCompat.Builder(QuizClassStarted.this);
 
             Intent myIntent = new Intent(QuizClassStarted.this, category_all.class);

@@ -171,7 +171,7 @@ public class cat3 extends AppCompatActivity implements View.OnClickListener {
         else
         {
             Intent intent = new Intent(cat3.this,ScoreActivity.class);
-            intent.putExtra("SCORE",String.valueOf(score)+"/"+String.valueOf(questionList.size()));
+            intent.putExtra("SCORE",String.valueOf(score));
             startActivity(intent);
             cat3.this.finish();
         }
