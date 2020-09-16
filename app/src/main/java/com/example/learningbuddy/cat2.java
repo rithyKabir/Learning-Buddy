@@ -52,11 +52,11 @@ public class cat2 extends AppCompatActivity implements View.OnClickListener {
     private  void getquestioList()
     {
         questionList = new ArrayList<>();
-        questionList.add(new Question("Question 1","A","B","C","D",2));
-        questionList.add(new Question("Question 2","Abb","AbbB","CAbb","DAbb",2));
-        questionList.add(new Question("Question 3","AAbb","AbbB","AbbvC","AbbD",2));
-        questionList.add(new Question("Question 4","AAbb","BAbb","CfAbb","DAbb",2));
-        questionList.add(new Question("Question 5","AAbb","BAbb","CAbb","DAbb",2));
+        questionList.add(new Question(" Which of the following is not a Java features?","Dynamic","Use of pointers","Object-oriented","Architecture Neutral",2));
+        questionList.add(new Question("_____ is used to find and fix bugs in the Java programs.","JVM","JDB","JRE","JDK",2));
+        questionList.add(new Question("Which of the following is a valid declaration of a char?","char ca = 'tea';","char ch = '\\utea';","char cr = \\u0223;","char cr = \\u02234;",2));
+        questionList.add(new Question("What is the return type of the hashCode() method in the Object class?","Object","int","long","void",2));
+        questionList.add(new Question("Which of the following for loop declaration is not valid?","for ( int i = 7; i <= 77; i += 7 )","for ( int i = 7; i <= 77; i += 7 )","for ( int i = 7; i <= 77; i += 7 )","for ( int i = 7; i <= 77; i += 7 )",2));
 
         // question is being made
         setQuestion();

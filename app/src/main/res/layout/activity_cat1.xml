@@ -30,11 +30,11 @@
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_margin="16dp"
+            android:layout_margin="1dp"
             android:gravity="center"
             android:text="Question"
             android:textColor="#F5FFFA"
-            android:textSize="70sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
 
