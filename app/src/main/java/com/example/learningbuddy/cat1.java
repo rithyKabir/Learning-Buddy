@@ -52,11 +52,11 @@ public class cat1 extends AppCompatActivity implements View.OnClickListener {
     private  void getquestioList()
     {
         questionList = new ArrayList<>();
-        questionList.add(new Question("Question 1","A","B","C","D",2));
-        questionList.add(new Question("Question 2","Abb","AbbB","CAbb","DAbb",2));
-        questionList.add(new Question("Question 3","AAbb","AbbB","AbbvC","AbbD",2));
-        questionList.add(new Question("Question 4","AAbb","BAbb","CfAbb","DAbb",2));
-        questionList.add(new Question("Question 5","AAbb","BAbb","CAbb","DAbb",2));
+        questionList.add(new Question("which is not Dynamic ?","Vector","Array","Map","Set",2));
+        questionList.add(new Question("what is used for printing?","print","printf","cin","scanf",2));
+        questionList.add(new Question("if int i=4 then i++ is","i=4","i=5","i=16","i=8",2));
+        questionList.add(new Question("if array[50] then which is false","array[10]=1","array[100]=1","array[20]=1","array[10]=1",2));
+        questionList.add(new Question("which is used for taking input ?","print","scanf","cout","set",2));
 
         // question is being made
         setQuestion();

@@ -54,7 +54,7 @@ public class QuizClassStarted extends AppCompatActivity {
         public void run() {
 
             startAlarm(true,true);
-            mHandler.postDelayed(this, 1000000);
+            mHandler.postDelayed(this, 15000);
         }
     };
 
