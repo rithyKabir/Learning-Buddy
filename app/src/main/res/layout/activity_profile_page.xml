@@ -56,10 +56,10 @@
                         android:textSize="20sp"
                         />
                     <TextView
-                        android:id="@+id/asked"
+                        android:id="@+id/askedTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="125"
+                        android:text="0"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:paddingTop="10dp"
@@ -79,10 +79,10 @@
                         android:textSize="20sp"
                         />
                     <TextView
-                        android:id="@+id/attempt"
+                        android:id="@+id/attemptTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1205"
+                        android:text="0"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:paddingTop="10dp"
@@ -102,10 +102,10 @@
                         android:textSize="20sp"
                         />
                     <TextView
-                        android:id="@+id/correct"
+                        android:id="@+id/correctTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="360"
+                        android:text="0"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:paddingTop="10dp"
@@ -133,12 +133,13 @@
                 android:layout_height="36dp"
                 android:src="@drawable/correct"/>
             <TextView
+                android:id="@+id/accuracyToday"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="80% Accuracy rate Today"/>
+                android:text="0% Accuracy rate Today"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -151,12 +152,13 @@
                 android:layout_height="36dp"
                 android:src="@drawable/camera"/>
             <TextView
+                android:id="@+id/overAllAccuracy"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="70% Accuracy rate Last week"/>
+                android:text="0% Accuracy rate Overall"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -169,13 +171,13 @@
                 android:layout_height="36dp"
                 android:src="@drawable/editname"/>
             <TextView
-                android:id="@+id/customQus"
+                android:id="@+id/customQusTextView"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="50 Custom Added Questions"/>
+                android:text="0 Custom Added Questions"/>
         </LinearLayout>
 
 

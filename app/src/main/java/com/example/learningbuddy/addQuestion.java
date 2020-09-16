@@ -10,10 +10,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class addQuestion extends AppCompatActivity {
     Button press;
     EditText answer, question;
+    DatabaseReference databaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,7 @@ public class addQuestion extends AppCompatActivity {
         press = findViewById(R.id.press);
         answer = findViewById(R.id.answer);
         question = findViewById(R.id.question);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Questions and Answers");
         press.setOnLongClickListener(new View.OnLongClickListener() {
 
             @Override
@@ -38,6 +42,22 @@ public class addQuestion extends AppCompatActivity {
     }
     void ADD()
     {
+        //database
+        String ques = question.getText().toString().trim();
+        String ans = answer.getText().toString().trim();
+
+        String key = databaseReference.push().getKey();
+
+        CustomQuestion customQuestion = new CustomQuestion(ques,ans);
+        databaseReference.child(key).setValue(customQuestion);
+
+        question.setText("");
+        answer.setText("");
+
+
+
+
+        //database end
         goToMenu();
 
     }

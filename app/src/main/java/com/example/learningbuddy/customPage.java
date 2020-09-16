@@ -23,13 +23,27 @@ public class customPage extends AppCompatActivity {
             }
         });
         button2 = findViewById(R.id.button2);
-        button1.setOnClickListener(new View.OnClickListener() {
+        /*button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToMenu();
             }
+        });*/
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToRivisionPage();
+            }
         });
     }
+
+
+
+    private void goToRivisionPage() {
+        Intent intent = new Intent(customPage.this,RivisionPage.class);
+        startActivity(intent);
+    }
+
     void goToMenu()
     {
         Intent intent = new Intent(this, addQuestion.class);
@@ -41,7 +55,11 @@ public class customPage extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+
+        // animation
         Animatoo.animateSplit(this);
     }
 }
